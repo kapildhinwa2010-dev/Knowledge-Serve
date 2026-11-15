@@ -46,4 +46,4 @@ jobs:
       - name: Compile and smoke-test package
         run: |
           python -m compileall -q knowledge_serve.py tests
-          python -c "from knowledge_serve import KnowledgeServe; print(type(KnowledgeServe()).__name__)"
+          python -c "from knowledge_serve import Envelope; print(type(Envelope()).__name__)"
